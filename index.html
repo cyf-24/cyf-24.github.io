@@ -4,235 +4,141 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yifan Chen | 陈奕帆</title>
-  <meta name="description" content="Yifan Chen is an undergraduate student in the Department of Automation at Tsinghua University, interested in world models, VLA, robotic foundation models, humanoids, and whole-body control.">
-  <meta name="theme-color" content="#6f2dbd">
+  <meta name="description" content="Yifan Chen, Automation undergraduate at Tsinghua University. Research in robot learning, world models, policy evaluation, and discrete visual representations.">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Yifan Chen | 陈奕帆">
-  <meta property="og:description" content="Undergraduate student at Tsinghua University. Research interests: world models, VLA, robotic foundation models, humanoids, and whole-body control.">
+  <meta property="og:description" content="Robot learning, world models, and visual representations. Undergraduate researcher at Tsinghua University.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/lucide.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="navbar" aria-label="Primary navigation">
-      <a class="brand" href="#profile" aria-label="Yifan Chen home">Yifan Chen</a>
-      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#service">Service</a>
-        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
-          <span class="theme-icon" aria-hidden="true">A</span>
-        </button>
+      <a class="brand" href="#profile">Yifan Chen</a>
+      <div class="nav-actions">
+        <div class="nav-links" id="navigation">
+          <a href="#research">Research</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#awards">Honors</a><a href="#service">Service</a>
+        </div>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme"><i data-lucide="moon" aria-hidden="true"></i></button>
+        <button class="icon-button menu-button" type="button" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false" title="Open navigation"><i data-lucide="menu" aria-hidden="true"></i></button>
       </div>
     </nav>
   </header>
-
-  <main class="container">
+  <main class="container" id="main">
     <section class="profile" id="profile" aria-labelledby="profile-title">
-      <div class="profile-image">
-        <img src="assets/img/profile-small.jpg" alt="Portrait of Yifan Chen">
-      </div>
       <div class="profile-info">
-        <p class="eyebrow">Department of Automation, Tsinghua University</p>
-        <h1 id="profile-title">Yifan Chen <span>陈奕帆</span></h1>
-        <p class="profile-meta">Undergraduate student | Statistics minor | GPA 3.99 / 4.0, Rank 2 / 170</p>
-        <p class="profile-summary">
-          I am an undergraduate student in the Department of Automation at Tsinghua University.
-          My current interests center on embodied intelligence, world models, world action models,
-          visual-language-action systems, robotic foundation models, humanoid robotics, and whole-body control.
-        </p>
+        <h1 id="profile-title">Yifan Chen <span lang="zh">陈奕帆</span></h1>
+        <p class="affiliation">Department of Automation, Tsinghua University</p>
+        <p>I am an undergraduate researcher at Tsinghua University, with a minor in Statistics. My research focuses on <strong>robot learning, world models, and visual representations</strong>.</p>
+        <p>I study how robots can learn compositional skills efficiently, how we can evaluate policies reliably, and how discrete representations can make better use of their capacity.</p>
         <div class="social-links" aria-label="Contact links">
-          <a href="mailto:cyf24@mails.tsinghua.edu.cn">Email</a>
-          <a href="https://github.com/cyf-24" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:cyf24@mails.tsinghua.edu.cn"><i data-lucide="mail" aria-hidden="true"></i>Email</a>
+          <a href="https://github.com/cyf-24" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i>GitHub</a>
+          <a href="#research">Research <i data-lucide="arrow-down" aria-hidden="true"></i></a>
         </div>
       </div>
+      <img class="profile-image" src="assets/img/profile-small.jpg" alt="Yifan Chen" width="180" height="225" fetchpriority="high">
     </section>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I am a member of Tsinghua's class of 2024 in Automation, with a minor in Statistics.
-        I enjoy problems where perception, control, and learning meet: how embodied agents build
-        usable representations, how world/action models support planning, and how humanoid systems
-        can turn multimodal inputs into robust whole-body behavior.
-      </p>
-      <p>
-        My project experience spans discrete vision tokenizers, embodied benchmarks, active learning
-        for compositional robotic tasks, tactile representation for robot control, deep-learning course
-        projects, and quadruped control.
-      </p>
-    </section>
-
-    <section id="news" class="section">
-      <h2>News</h2>
+    <section id="news" class="news-section" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
       <ul class="news-list" id="news-list">
-        <li><time>2026.04</time><span>Started Robocoach, an active-learning project for compositional robotic tasks.</span></li>
-        <li><time>2026.03</time><span>Started work on cross-domain tactile representation and hierarchical residual control for whole-body locomotion and manipulation.</span></li>
-        <li><time>2026.02</time><span>Started the Critical Interval embodied intelligence benchmark project.</span></li>
-        <li><time>2026</time><span>Won the Humanoid League Large Size title at RoboCup 2026, alongside the Large Size and Technical Challenge titles at the RoboCup China Open.</span></li>
-        <li><time>2026</time><span>Won first prizes in the 9th Tsinghua AI Challenge and THUAI-9 automation track.</span></li>
-        <li><time>2025-2026</time><span>Named a Tsinghua University Outstanding Student.</span></li>
-        <li><time>2025</time><span>Received the National Scholarship and Tsinghua University Scholarship for the 2024-2025 academic year.</span></li>
+        <li><time datetime="2026-10">2026.10</time><span><a href="#robocoach">RoboCoach</a> and <a href="#ci-mse">CI-MSE</a> are under review.</span></li>
+        <li><time datetime="2026-09">2026.09</time><span>Helped organize the 3rd Tsinghua Embodied Intelligence Challenge and coordinated the gripper-track evaluation.</span></li>
+        <li><time datetime="2026">2026</time><span>Our Tsinghua Vulcan team won <strong>three RoboCup titles</strong>: the international Large division, China Open Large division, and Technical Challenge.</span></li>
+        <li><time datetime="2026-08">2026.08</time><span>Completed a research internship at Liqing Intelligence, working on failure-learning data and detection in ReAlign.</span></li>
+        <li><time datetime="2026-06">2026.06</time><span>Became Head of the Hardware Department, Automation Student Science Association.</span></li>
+        <li><time datetime="2026-04">2026.04</time><span>Started work on RoboCoach and compositional robot learning.</span></li>
+        <li><time datetime="2026-02">2026.02</time><span>Started work on critical-interval evaluation for robot policies.</span></li>
+        <li><time datetime="2025">2025</time><span>Received the National Scholarship for the 2024-2025 academic year.</span></li>
       </ul>
-      <button class="news-toggle" id="news-toggle" type="button" hidden>Show more</button>
+      <button class="text-button news-toggle" id="news-toggle" type="button" aria-controls="news-list" aria-expanded="false" hidden>Earlier news <i data-lucide="chevron-down" aria-hidden="true"></i></button>
     </section>
-
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <div class="section-heading"><h2 id="research-heading">Selected Research</h2><span>Manuscripts &amp; ongoing work</span></div>
+      <article class="publication featured" id="robocoach">
+        <a class="publication-image" href="https://robocoach-ai.github.io/" target="_blank" rel="noopener noreferrer" aria-label="RoboCoach project website"><img src="assets/img/research/robocoach.png" width="640" height="360" alt="RoboCoach overview: skill routing, world-model diagnosis, and targeted improvement" loading="lazy"></a>
+        <div class="publication-content">
+          <h3><a href="https://robocoach-ai.github.io/" target="_blank" rel="noopener noreferrer">RoboCoach: World Models as Active Coaches for Compositional Robot Skills</a></h3>
+          <p class="authors">Jiajun Liu*, <strong>Yifan Chen*</strong>, Yichao Liu*, Jiayi Zhang, Ruoqu Chen, Shaoxuan Xie, Guocai Yao, Mengdi Xu, Sen Cui, Changshui Zhang</p>
+          <p class="publication-status"><span class="status-review">Under review</span><span>2026 · Co-first author, listed second</span></p>
+          <p class="paper-summary">World models identify bottlenecks in compositional robot tasks and guide targeted policy improvement.</p>
+          <div class="paper-links"><a href="https://robocoach-ai.github.io/" target="_blank" rel="noopener noreferrer">Project <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><span class="equal-note">* Equal contribution</span></div>
+        </div>
+      </article>
+      <article class="publication" id="ci-mse">
+        <a class="publication-image" href="https://ci-mse.github.io/" target="_blank" rel="noopener noreferrer" aria-label="CI-MSE project website"><img src="assets/img/research/ci-mse.png" width="852" height="525" alt="CI-MSE measures policy error at critical grasp intervals rather than uncritical movements" loading="lazy"></a>
+        <div class="publication-content">
+          <h3><a href="https://ci-mse.github.io/" target="_blank" rel="noopener noreferrer">Critical Interval MSE: Toward Reliable Offline Validation for Robot Policy</a></h3>
+          <p class="authors"><strong>Yifan Chen</strong> · Third author</p>
+          <p class="publication-status"><span class="status-review">Under review</span><span>2026</span></p>
+          <p class="paper-summary">A task-critical offline validation metric for more reliable evaluation of robot manipulation policies.</p>
+          <div class="paper-links"><a href="https://ci-mse.github.io/" target="_blank" rel="noopener noreferrer">Project <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+        </div>
+      </article>
+    </section>
+    <section id="experience" class="section">
+      <h2>Research Experience</h2>
+      <article class="timeline-item"><div class="item-date">Jul - Aug 2026</div><div><h3>Liqing Intelligence <span class="chinese-name">北京厘清智能</span></h3><p class="role">Research Intern</p><p>Contributed to ReAlign, focusing on a failure-learning dataset and failure-detection methods.</p></div></article>
+      <article class="timeline-item"><div class="item-date">2026</div><div><h3>Beijing Academy of Artificial Intelligence (BAAI)</h3><p>Research practice in single-arm and bimanual robot policy training and deployment.</p></div></article>
+    </section>
     <section id="education" class="section">
       <h2>Education</h2>
-      <article class="timeline-item">
-        <div class="timeline-aside">
-          <div class="logo-mark">THU</div>
-          <div class="date">Aug 2024 - Jun 2027 expected</div>
-        </div>
-        <div class="timeline-content">
-          <h3>Tsinghua University</h3>
-          <p>Undergraduate student, Department of Automation. Minor in Statistics.</p>
-          <ul>
-            <li>GPA: 3.99 / 4.0, ranked 2 / 170.</li>
-            <li>Core coursework includes Calculus, Linear Algebra, Introduction to Artificial Intelligence, Data Structures, and Discrete Mathematics.</li>
-            <li>Statistics minor coursework includes Elementary Probability, Statistical Inference, Multivariate Statistical Analysis, and Statistical Computing.</li>
-          </ul>
-        </div>
-      </article>
+      <article class="timeline-item"><div class="item-date">2024 - 2027<br><span>Expected graduation</span></div><div><h3>Tsinghua University</h3><p>Undergraduate, Department of Automation · Minor in Statistics</p><p class="academic-highlight"><strong>GPA 3.99 / 4.0</strong><span>Rank <strong>2 / 170</strong></span></p><p>2025-2026 GPA: 3.97 / 4.0. Completed 13 credits toward the Statistics minor.</p><details><summary>Selected coursework</summary><p>Calculus, Linear Algebra, Introduction to Artificial Intelligence, Data Structures, and Discrete Mathematics. Statistics coursework includes Elementary Probability, Statistical Inference, Multivariate Statistical Analysis, and Statistical Computing.</p></details></div></article>
     </section>
-
-    <section id="research" class="section">
-      <h2>Research Projects</h2>
-      <article class="research-item">
-        <div class="item-date">Nov 2025 - Apr 2026</div>
-        <div class="item-content">
-          <h3>OptVQ: Preventing Local Pitfalls in Discrete Vision Tokenizer for Full Codebook Utilization</h3>
-          <p>Explores Sinkhorn optimal transport to mitigate codebook collapse in VQ-VAE style discrete vision tokenizers.</p>
-          <div class="tags"><span>Vision Tokenizer</span><span>VQ-VAE</span><span>Optimal Transport</span></div>
-        </div>
-      </article>
-
-      <article class="research-item">
-        <div class="item-date">Feb 2026 - Jun 2026</div>
-        <div class="item-content">
-          <h3>Critical Interval Embodiment Benchmark</h3>
-          <p>Builds an embodied-intelligence benchmark focused on critical intervals in agent behavior.</p>
-          <div class="tags"><span>Benchmark</span><span>Embodied AI</span><span>Evaluation</span></div>
-        </div>
-      </article>
-
-      <article class="research-item">
-        <div class="item-date">Apr 2026 - Present</div>
-        <div class="item-content">
-          <h3>Robocoach Active Learning</h3>
-          <p>Investigates active learning for compositional robotic tasks, with an emphasis on efficient data collection and feedback-driven policy improvement.</p>
-          <div class="tags"><span>Active Learning</span><span>Robot Learning</span><span>Compositional Tasks</span></div>
-        </div>
-      </article>
-
-      <article class="research-item">
-        <div class="item-date">Mar 2026 - Present</div>
-        <div class="item-content">
-          <h3>Cross-Domain Tactile Representation and Hierarchical Residual Control</h3>
-          <p>Studies tactile representation and control for robotic whole-body locomotion and manipulation, using tactile-skin hardware to enrich the control modality.</p>
-          <div class="tags"><span>Tactile Representation</span><span>Whole-Body Control</span><span>Robotics</span></div>
-        </div>
-      </article>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Solving Image Recognition Problems with Deep Learning</h3>
-          <p class="project-meta">Mar 2025 - Apr 2025 | Excellent course project, Introduction to AI</p>
-          <p>A deep-learning project for image recognition tasks.</p>
-          <a href="https://github.com/cyf-24/Solving-Image-Recognition-Problems-with-Deep-Learning" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Excel File Processing Program</h3>
-          <p class="project-meta">May 2025 - Jun 2025 | Excellent course project, Introduction to AI</p>
-          <p>A practical tool for processing Excel files and automating spreadsheet workflows.</p>
-          <a href="https://github.com/cyf-24/excel-file-processing-program" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Cyberdog Controller</h3>
-          <p class="project-meta">May 2025 - Jun 2025 | Robot dog competition</p>
-          <p>Control algorithms for a quadruped robot competition.</p>
-          <a href="https://github.com/cyf-24/cyberdog" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </article>
-      </div>
-    </section>
-
     <section id="awards" class="section">
-      <h2>Selected Awards</h2>
+      <h2>Selected Honors &amp; Competitions</h2>
       <ul class="award-list">
-        <li><span>National Scholarship</span><time>2024-2025</time></li>
-        <li><span>Tsinghua University Scholarship</span><time>2024-2025</time></li>
-        <li><span>Tsinghua University Outstanding Student</span><time>2025-2026</time></li>
-        <li><span>Champion, RoboCup Humanoid League Large Size international competition</span><time>2026</time></li>
-        <li><span>Champion, RoboCup China Open humanoid Large group</span><time>2026</time></li>
-        <li><span>Champion, RoboCup humanoid Large Technical Challenge</span><time>2026</time></li>
-        <li><span>National First Prize, physical track, Humanoid Robot Innovation Challenge, China Robotics and AI Competition</span><time>2026</time></li>
-        <li><span>National Second Prize, simulation track, Humanoid Robot Innovation Challenge</span><time>2026</time></li>
-        <li><span>Special Prize, 4th Robot Dog Development Competition, team leader</span><time>2025</time></li>
-        <li><span>First Prize, THUAI8 Artificial Intelligence Challenge, Department of Automation track, team leader</span><time>2025</time></li>
-        <li><span>First Prize, 2nd Tsinghua Embodied Intelligence Challenge</span><time>2025</time></li>
-        <li><span>First Prize, 9th Tsinghua AI Challenge, Department of Electronic Engineering reinforcement-learning track</span><time>2026</time></li>
-        <li><span>First Prize, THUAI-9 Department of Automation track</span><time>2026</time></li>
-        <li><span>Third Prize and Outstanding Trainee, Tsinghua Intelligent Vehicle Competition</span><time>2025</time></li>
-        <li><span>Second Prize, National College Physics Competition, non-physics group A</span><time>2025</time></li>
-        <li><span>Excellent Team, LeYun Embodied Intelligence at Tsinghua, Alibaba DAMO Academy</span><time>2025</time></li>
+        <li><time>2026</time><span><strong>RoboCup · Three championship titles</strong><span class="award-detail">Tsinghua Vulcan Team: international Humanoid Large division, China Open Large division, and Technical Challenge.</span></span></li>
+        <li><time>2026</time><span><strong>First Prizes · THUAI-9</strong><span class="award-detail">Electronic Engineering reinforcement-learning track and Automation track.</span></span></li>
+        <li><time>2026</time><span><strong>Global Top 32 · URKL Humanoid Robot Fighting League</strong><span class="award-detail">Team Real Steel.</span></span></li>
+        <li><time>2025-2026</time><span><strong>Tsinghua University Outstanding Student</strong></span></li>
+        <li><time>2025</time><span><strong>First Prize · 2nd Tsinghua Embodied Intelligence Challenge</strong></span></li>
+        <li><time>2024-2025</time><span><strong>National Scholarship</strong><span class="award-detail">Also received the Tsinghua University Scholarship.</span></span></li>
       </ul>
+      <details class="additional-work"><summary>More awards</summary><ul class="compact-list">
+        <li>National First Prize, physical track, and National Second Prize, simulation track, Humanoid Robot Innovation Challenge, China Robotics and AI Competition (2026).</li>
+        <li>Special Prize, 4th Robot Dog Development Competition, team leader (2025).</li>
+        <li>First Prize, THUAI8 Automation track, team leader (2025).</li>
+        <li>Third Prize and Outstanding Trainee, Tsinghua Intelligent Vehicle Competition (2025).</li>
+        <li>Second Prize, 41st National College Physics Competition, non-physics group A (2025).</li>
+        <li>Excellent Team, LeYun Embodied Intelligence at Tsinghua, Alibaba DAMO Academy.</li>
+      </ul></details>
     </section>
-
     <section id="service" class="section">
       <h2>Leadership &amp; Service</h2>
       <div class="service-columns">
-        <ul>
-          <li>Member, Tsinghua Vulcan Team, Zhuiguang Program Phase IV.</li>
-          <li>Technical committee member, General AI Personalized Education Program.</li>
-          <li>Class monitor and innovation committee member of Class 46.</li>
-          <li>Three-Star Volunteer, Tsinghua Bauhinia Volunteer Program.</li>
-        </ul>
-        <ul>
-          <li>Officer, Student Rights Department, Department of Automation Student Union.</li>
-          <li>Head, Hardware Department, Department of Automation Student Science Association.</li>
-          <li>Member, Tsinghua Youth League ideological and political practice group.</li>
-          <li>Captain, Department of Automation ice hockey team, 1st Tsinghua Ice and Snow Sports Games.</li>
-          <li>Vice leader, "Zhiqi Huxing" summer social-practice team; program planner for the department student festival class play.</li>
-        </ul>
+        <div><h3>Current roles</h3><ul class="compact-list">
+          <li><strong>Head, Hardware Department</strong>, Automation Student Science Association (since June 2026). Helped organize THUEI-3 and coordinated the gripper-track evaluation.</li>
+          <li><strong>Class Monitor, Class 46</strong> (since June 2025). Class activities, communication, and student support.</li>
+          <li>Technical Committee Member, General AI Personalized Education Program (since February 2025). Server management and class activities.</li>
+          <li>Member, Tsinghua Youth League ideological and political practice group (since June 2025).</li>
+        </ul></div>
+        <div><h3>Previous roles</h3><ul class="compact-list">
+          <li>Innovation Committee Member, Class 46 (September 2024 - June 2025).</li>
+          <li>Officer, Student Rights Department, Automation Student Union (February - June 2025).</li>
+          <li>Member, Hardware Department, Automation Student Science Association (June 2025 - June 2026).</li>
+          <li>Deputy Leader, “Zhiqi Huxing” summer social-practice team; member of Tsinghua's “Keji” service team.</li>
+        </ul></div>
+      </div>
+      <p class="service-note">Represented Automation's 2024 cohort at the university Student Congress. Three-Star Volunteer in the Tsinghua Bauhinia Volunteer Program: <strong>130 hours in total</strong>, including <strong>72.5 hours in 2025-2026</strong>, across competition support, student orientation, academic Q&amp;A, and community service.</p>
+    </section>
+    <section id="projects" class="section secondary-section">
+      <h2>Earlier Projects</h2>
+      <div class="project-list">
+        <article><h3><a href="https://github.com/cyf-24/cyberdog" target="_blank" rel="noopener noreferrer">Cyberdog Controller</a></h3><p>Quadruped competition control · May - June 2025.</p></article>
+        <article><h3><a href="https://github.com/cyf-24/Solving-Image-Recognition-Problems-with-Deep-Learning" target="_blank" rel="noopener noreferrer">Image Recognition with Deep Learning</a></h3><p>Excellent course project, Introduction to AI · March - April 2025.</p></article>
+        <article><h3><a href="https://github.com/cyf-24/excel-file-processing-program" target="_blank" rel="noopener noreferrer">Excel File Processing Program</a></h3><p>Excellent course project, Introduction to AI · May - June 2025.</p></article>
       </div>
     </section>
-
-    <section id="interests" class="section compact">
-      <h2>Research Interests</h2>
-      <div class="interest-pills">
-        <span>World Models</span>
-        <span>World Action Models</span>
-        <span>Visual-Language-Action Models</span>
-        <span>Robotic Foundation Models</span>
-        <span>Humanoid Robotics</span>
-        <span>Whole-Body Control</span>
-        <span>Embodied AI</span>
-      </div>
+    <section id="beyond-research" class="section secondary-section">
+      <h2>Beyond Research</h2>
+      <p>I enjoy team activities: our ten-person synchronized rope-skipping team placed first in Group A at the Ma John Cup and third in the Capital Universities competition. I also participate in ice hockey, running, and class theater as a planner and performer, and share my experiences with incoming students.</p>
+      <p>Member of the Tsinghua Vulcan Team through Phase IV of the Zhuiguang Program.</p>
     </section>
-
-    <div class="last-updated">Last updated: July 2026</div>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <span>&copy; 2026 Yifan Chen.</span>
-      <span>Hosted on GitHub Pages.</span>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+  <footer class="site-footer"><div class="container"><span>&copy; 2026 Yifan Chen</span><span>Last updated: October 2026</span></div></footer>
 </body>
 </html>
